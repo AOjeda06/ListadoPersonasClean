@@ -7,7 +7,7 @@ namespace Domain.RepositoriesInterfaces
     /// <summary>
     /// Defines a repository interface for accessing and managing persona data.
     /// </summary>
-    public interface IPersonaRepository
+    public interface IPersonaRepository 
     {
         /// <summary>
         /// Retrieves a list of all registered persons.

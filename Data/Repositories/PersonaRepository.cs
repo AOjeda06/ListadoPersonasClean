@@ -9,7 +9,7 @@ namespace Data.Repositories
     /// <remarks>The <see cref="PersonaRepository"/> class offers methods to access and manage a predefined
     /// list of personas. It implements the <see cref="IPersonaRepository"/> interface, providing a concrete
     /// implementation for persona data retrieval.</remarks>
-    public class PersonaRepository : IPersonaRepository
+    public class PersonaRepository : IPersonaRepository //INJECTABLE
     {
         #region Attributes
 

@@ -9,7 +9,7 @@ namespace Data.Repositories
     /// <remarks>This class implements the <see cref="IPersonaRepository"/> interface and is initialized with
     /// an empty list of personas. It is intended for use in scenarios where a sample dataset is needed for testing or
     /// demonstration purposes.</remarks>
-    public class PersonaRepositoryEmpty : IPersonaRepository
+    public class PersonaRepositoryEmpty : IPersonaRepository //INJECTABLE
     {
         #region Attributes
 
