@@ -7,8 +7,9 @@ namespace Domain.UseCases
     public class PersonaRepositoryUseCase : IPersonaRepositoryUseCase
     {
         private readonly IPersonaRepository PersonaRepository;
-        public PersonaRepositoryUseCase() // INJECTION
+        public PersonaRepositoryUseCase( IPersonaRepository personaRepository) // INJECTION
         {
+            this.PersonaRepository = personaRepository;
         }
        
         public List<Persona> GetListadoPersonas()

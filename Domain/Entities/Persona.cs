@@ -48,7 +48,7 @@ namespace Domain.Entities
 			Id = 0;
 			Nombre = string.Empty;
 			Apellido = string.Empty;
-			FechaNacimiento = null;
+			FechaNacimiento = DateTime.MinValue;
 		}
 
 		/// <summary>
