@@ -7,6 +7,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+// Registrar implementaciones antes de Build
+builder.Services.AddScoped<IPersonaRepository, PersonaRepository>();
+builder.Services.AddScoped<IPersonaRepositoryUseCase, PersonaRepositoryUseCase>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -25,7 +29,3 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
-
-builder.Services.AddScoped<IPersonaRepository, PersonaRepository>(); 
-builder.Services.AddScoped<IPersonaRepositoryUseCase, PersonaRepositoryUseCase>();
-

@@ -6,7 +6,7 @@ namespace Domain.UseCases
 {
     public class PersonaRepositoryUseCase : IPersonaRepositoryUseCase
     {
-        private readonly IPersonaRepository PersonaRepository;
+        private IPersonaRepository PersonaRepository;
         public PersonaRepositoryUseCase( IPersonaRepository personaRepository) // INJECTION
         {
             this.PersonaRepository = personaRepository;
