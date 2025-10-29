@@ -7,7 +7,7 @@ namespace Domain.UseCases
     public class PersonaRepositoryUseCase : IPersonaRepositoryUseCase
     {
         private readonly IPersonaRepository PersonaRepository;
-        public PersonaRepositoryUseCase() //FOR INJECTION
+        public PersonaRepositoryUseCase() // INJECTION
         {
         }
        
