@@ -1,3 +1,4 @@
+using DI;
 using Domain.RepositoriesInterfaces;
 using Domain.UseCases;
 using Data.Repositories;
@@ -8,8 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 // Registrar implementaciones antes de Build
-builder.Services.AddScoped<IPersonaRepository, PersonaRepository>();
-builder.Services.AddScoped<IPersonaRepositoryUseCase, PersonaRepositoryUseCase>();
+builder.Services.AddCompositionRoot();
 
 var app = builder.Build();
 
